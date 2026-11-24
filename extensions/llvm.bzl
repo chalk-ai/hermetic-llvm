@@ -71,6 +71,8 @@ _LLVM_22_SOURCE_PATCHES = [
     "//3rd_party/llvm-project/22.x/patches:llvm-bazel-blake3-windows-gnu.patch",
     "//3rd_party/llvm-project/22.x/patches:llvm-bazel-windows-arm64-config.patch",
     "//3rd_party/llvm-project/x.x/patches:llvm-bazel-libxml2.patch",
+    # chalk-ai fork: deterministic distributed ThinLTO indexes (backport of llvm/llvm-project df4dc784725a).
+    "//3rd_party/llvm-project/22.x/patches:thinlto-sorted-distributed-index.patch",
 ] + _BEFORE_23_SOURCE_PATCHES + _DEFAULT_SOURCE_PATCHES
 
 _LLVM_23_SOURCE_PATCHES = [
